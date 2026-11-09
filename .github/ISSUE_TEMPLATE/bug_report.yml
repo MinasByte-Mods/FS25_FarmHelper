@@ -1,0 +1,71 @@
+name: Bug report
+description: Something in Farm Helper is not working as expected.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this. You can write in English or Portuguese.
+  - type: input
+    id: mod-version
+    attributes:
+      label: Mod version
+      description: Shown in the mod list of the game.
+      placeholder: 1.0.0.0
+    validations:
+      required: true
+  - type: input
+    id: game-version
+    attributes:
+      label: Game version
+      description: Shown at the bottom of the main menu.
+      placeholder: 1.x.x.x
+    validations:
+      required: true
+  - type: input
+    id: map
+    attributes:
+      label: Map
+      description: The map of your savegame.
+      placeholder: Riverbend Springs
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem. Screenshots help.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What should we do to see the same problem?
+      placeholder: |
+        1. Open the Farm Workers tab
+        2. Hire a worker
+        3. Create a task on field 12
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: log.txt
+      description: |
+        Attach the file from `Documents\My Games\FarmingSimulator2025\log.txt`, copied right after the problem happens and before opening the game again. It can show your Windows user name inside file paths, and you can replace it before attaching.
+      placeholder: Drag and drop log.txt here.
+    validations:
+      required: true
+  - type: textarea
+    id: other-mods
+    attributes:
+      label: Other active mods
+      description: List them if the problem does not happen with Farm Helper alone, or if you could not test that.
